@@ -1,0 +1,14 @@
+
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/catstyle.css') }}">
+	<!-- link to style sheet -->
+</head>
+<body class=body>
+	<h1>Selection</h1>
+	<ol>
+		<!-- loop for the list of selected data -->
+		{% for i in data %}
+			<li>"{{ i }}"</li>
+		{% endfor %}
+	</ol>
+</body>
